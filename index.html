@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"> 
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <title>Memory game</title> 
+  <link rel="stylesheet" href="style.css"> 
+<script src="memory.js"></script>
+</head>
+
+<body id="container" bgcolor="lightgray">
+  <div>
+   <span id="moves">0</span>
+   <div>Time <span id="minutes">00</span>:<span id="seconds">00</span></div>
+   <div id="rating">
+      <span class="rating-first">★</span>
+      <span class="rating-second">★</span>
+      <span class="rating-third">★</span>
+    </div>
+  <button onclick="myFunction()">
+    Restart
+  </button>
+  </div>
+  <table id="table" border="2" bordercolor="black">
+    <tr>
+      <td><img src="images/back.jpg" onclick ="choose(0)" /></td>
+      <td><img src="images/back.jpg" onclick ="choose(1)" /></td>
+      <td><img src="images/back.jpg" onclick ="choose(2)" /></td>
+      <td><img src="images/back.jpg" onclick ="choose(3)" /></td>
+    </tr>
+    <br>
+    <tr>
+      <td><img src="images/back.jpg" onclick ="choose(4)" /></td>
+      <td><img src="images/back.jpg" onclick ="choose(5)" /></td>
+      <td><img src="images/back.jpg" onclick ="choose(6)" /></td>
+      <td><img src="images/back.jpg" onclick ="choose(7)" /></td>
+    </tr>
+    <tr>
+      <td><img src="images/back.jpg" onclick ="choose(8)" /></td>
+      <td><img src="images/back.jpg" onclick ="choose(9)" /></td>
+      <td><img src="images/back.jpg" onclick ="choose(10)" /></td>
+      <td><img src="images/back.jpg" onclick ="choose(11)" /></td>
+    </tr>
+    <tr>
+      <td><img src="images/back.jpg" onclick ="choose(12)" /></td>
+      <td><img src="images/back.jpg" onclick ="choose(13)" /></td>
+      <td><img src="images/back.jpg" onclick ="choose(14)" /></td>
+      <td><img src="images/back.jpg" onclick ="choose(15)" /></td>
+    </tr>
+  </table>
+
+
+</body>
+</html>
